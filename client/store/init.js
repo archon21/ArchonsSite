@@ -100,10 +100,10 @@ const defaultState = {
     },
     {
       status: 'In Development',
-      tools: ['React', 'Redux', 'SCSS', 'Ytdl', 'Node', 'Firebase'],
+      tools: ['React', 'Redux', 'SCSS', 'Ytdl', 'Node', 'Firebase Suite'],
       type: 'Personal Project',
       img:
-        'https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/site-pics%2FScreen%20Shot%202019-03-22%20at%2010.12.58%20AM.png?alt=media&token=384b02a5-433e-4e87-a3a4-f2401ba23c14',
+        'https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/site-pics%2FScreen%20Shot%202019-09-27%20at%2011.58.17%20AM.png?alt=media&token=bd4bd676-80ef-42a9-aeda-94f6bfddaf98',
       codeLink: 'https://github.com/archon21/vulpes',
       // codeLink2: 'https://github.com/archon21/Voteanonymous-Backend',
       siteLink: 'https://vulpes-26185.web.app',
