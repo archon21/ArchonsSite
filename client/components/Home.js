@@ -11,6 +11,7 @@ import {
   Animator
 } from '../sub-components/containers';
 import { Video, Fab, List, Table, Carousel, Iterable } from '../sub-components';
+import Contact from './Contact';
 
 class Home extends Component {
   state = {
@@ -123,7 +124,7 @@ class Home extends Component {
         <WindoW
           column
           video
-          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2Fastrology-astronomy-background-image-1169754.jpg?alt=media&token=a067394f-e004-4619-a289-8bc4386eef8c"
+          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2Fblack-and-white-clouds-dark-557782.jpg?alt=media&token=a24d9dcd-9074-44d0-9610-8a14c53af4b8"
         >
           {/* <p className="headline-4 align-self-center">
 
@@ -136,7 +137,10 @@ class Home extends Component {
             value={introText}
           />
         </WindoW>
-        <WindoW backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2Farchitecture-black-and-white-buildings-1437493.jpg?alt=media&token=7b0d9c63-abe8-42ba-a001-710d0d6d0503" column>
+        <WindoW
+          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2Farchitecture-black-and-white-buildings-1437493.jpg?alt=media&token=c4a231cc-45a4-4682-ac99-3bcc610edaa7"
+          column
+        >
           <Divider
             border
             backgroundColor="background-primary"
@@ -159,7 +163,7 @@ class Home extends Component {
           </Animator>
         </WindoW>
         <WindoW
-          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/architecture-buildings-city-1980720.jpg?alt=media&token=0b904b45-0071-427b-b98f-c4cf697c7fd8"
+          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2Farchitecture-buildings-city-1980720.jpg?alt=media&token=bced9b51-f74a-4d0d-95c2-a45d88048de3"
           column
         >
           <Divider
@@ -184,7 +188,10 @@ class Home extends Component {
           </Animator>
         </WindoW>
 
-        <WindoW backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2Farchitecture-buildings-city-548084.jpg?alt=media&token=f9b07578-8568-4172-9a5a-01c822a70f00" column>
+        <WindoW
+          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2F1-wtc-america-architecture-374710.jpg?alt=media&token=b8d51de3-c602-452e-ae8b-815a375006f0"
+          column
+        >
           <Divider
             border
             backgroundColor="background-primary"
@@ -208,7 +215,11 @@ class Home extends Component {
             })}
           </Animator>
         </WindoW>
-        <WindoW justify="justify-start" backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2Farchitecture-black-black-and-white-169978.jpg?alt=media&token=c9c6c536-3c78-4a60-86d7-afdd0e76913d" column>
+        <WindoW
+          justify="justify-start"
+          backgroundUrl="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/Backgrounds%2Farchitecture-black-black-and-white-169978.jpg?alt=media&token=bc10acb1-b8b3-4434-8cdb-78fb346b56db"
+          column
+        >
           <Divider
             forwardedRef={about}
             border
@@ -221,48 +232,59 @@ class Home extends Component {
             </h5>
           </Divider>
           <br />
-          <Animator
-            inRef={aboutBlock}
-            scrolled={scrolled}
-            animation="a-wrapper--left"
-            maxWidth="maxw-800px"
-          >
-            <Block
-              column
-              type="info-card"
-              backgroundColor="background-secondary"
-              color="color-primary"
-              maxWidth="w-90"
+          <div className="flex row align-center justify-center wrap w-90">
+            <Animator
+              inRef={aboutBlock}
+              scrolled={scrolled}
+              animation="a-wrapper--left"
+              maxWidth="maxw-800px"
             >
-              <h5 className="headline-4">Who Am I?</h5>
-              <p className="body-1 p-20px">
-                Throughout my life I have always been fascinated with technology
-                and obsessed with being on the bleeding edge. I spent my early
-                years glued to all sorts of gadgets like game consoles, phones
-                and computers. As the years went by my obsession never stopped
-                but merely took a long slumber, it wasn't until I was in college
-                that I realized how much I really just loved computers and the
-                web. Between Communitiy College and University is when I entered
-                the field of Computer Science knowing thats what I wanted to do
-                with my life. I heard about Fullstack Academy from a friend
-                decided to take the intro course in NY for a week to see how it
-                was and I loved what I learned so much that I decided to take
-                the Immserive Software Engineering Course and the rest is
-                History
-              </p>
-              <Flex row>
-                <a
-                  target="_blank"
-                  href="https://www.linkedin.com/in/ryan-wetmore/"
-                >
-                  <i className="fab fa-linkedin text-decoration-none color-primary" />
-                </a>
-                <a target="_blank" href="https://github.com/archon21">
-                  <i className="fab fa-github-square text-decoration-none color-primary" />
-                </a>
-              </Flex>
-            </Block>
-          </Animator>
+              <Block
+                column
+                type="info-card"
+                backgroundColor="background-secondary--op"
+                color="color-primary"
+                maxWidth="w-90"
+              >
+                <h5 className="headline-4 my-20px">Who Am I?</h5>
+                <div className="flex row align-center justify-center my-10px">
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://www.linkedin.com/in/ryan-wetmore/"
+                  >
+                    <i className="fab fa-linkedin text-decoration-none color-primary" />
+                  </a>
+                  <a
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    href="https://github.com/archon21"
+                  >
+                    <i className="fab fa-github-square text-decoration-none color-primary" />
+                  </a>
+                </div>
+                <p className="body-1 p-20px">
+                  I am a Full Stack Web Developer that began learning code on my
+                  own and after seeing Fullstack Academy's course after a few
+                  personal projects, I applied and attended. During this intense
+                  and fast paced course, I worked on several projects and
+                  assignments that created a strong foundation for my skills in
+                  Web Development. Now I continue to build on that knowledge by
+                  working for various businesses applying their business logic
+                  to the web!
+                </p>
+              </Block>
+              <Block
+                column
+                type="info-card"
+                backgroundColor="background-secondary--op"
+                color="color-primary"
+                maxWidth="w-90"
+              >
+                <Contact />
+              </Block>
+            </Animator>
+          </div>
         </WindoW>
       </div>
     );

@@ -6,6 +6,7 @@
     z-index: 200;
 }
 
+
 #nav-h a:hover {
   border-top: 2px solid $color-secondary;
   border-bottom: 2px solid $color-secondary;
@@ -112,7 +113,7 @@
 .profile-pic {
   border-radius: 999px;
   height: 175px;
-  width: 150px;
+  width: 175px;
   object-fit: cover;
 }
 
@@ -126,12 +127,20 @@
   width: 70%;
 }
 
+.link {
+  border-left: 2px solid transparent;
+  transform: all 300ms ease-in-out;
+  text-align: left;
+  margin: 5px 0;
+  align-self: flex-start;
+}
+
 .link:hover {
-  border-left: 2px solid;
+  border-left: 2px solid #fff;
   color: $color-secondary;
   padding-left: 5px;
   cursor: pointer;
-  transform: border-left 300ms ease-in-out;
+
 }
 
 

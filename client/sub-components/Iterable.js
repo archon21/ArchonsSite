@@ -17,9 +17,9 @@ const Iterable = props => {
       <div className="iterable__inner flex row wrap justify-center align-center">
         <div className="flex column align-center iterable__inner__text">
           <div className="flex column align-center">
-            <h4 className="headline-4 text-left">{name}</h4>
-            <p className="body-1">{status}</p>
-            <p className="body-1">{type}</p>
+            <h4 className="headline-4 text-center">{name}</h4>
+            <span className="body-1 text-center">{status}</span>
+            <span className="body-1 text-center">{type}</span>
           </div>
           <p className="body-1 p-20px maxw-600px">{desc}</p>
 
@@ -38,10 +38,26 @@ const Iterable = props => {
           </ul>
         </div>
         <div className="flex column align-center">
-          <a className="iterable__inner__link" target="_blank" href={siteLink}>
-            <img className="work__image w-100 h-100 object-cover" src={img} />
-          </a>
-          <a target="_" href={codeLink} className="iterable__inner__code flex align-center justify-center">View Code</a>
+          {siteLink && (
+            <div className="iterable__inner__link">
+              <img className="work__image w-100 h-100 object-cover" src={img} />
+              <a
+                target="_blank"
+                href={siteLink}
+                className="work__image--overlay"
+              />
+            </div>
+          )}
+
+          {codeLink && (
+            <a
+              target="_"
+              href={codeLink}
+              className="iterable__inner__code flex align-center justify-center"
+            >
+              View Code
+            </a>
+          )}
         </div>
       </div>
       <hr />

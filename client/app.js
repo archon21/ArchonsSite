@@ -21,13 +21,13 @@ class App extends Component {
     const { alertStatus, alertTemplate } = this.props;
     return mounted ? (
       <div>
-        <Fab
+        {/* <Fab
           main={{
             name: 'arrow_upward',
             label: 'Back To Top',
             action: () => window.scrollTo(0, 0)
           }}
-        />
+        /> */}
         <Alert
           open={alertStatus}
           template={alertTemplate}

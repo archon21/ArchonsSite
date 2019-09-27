@@ -8,7 +8,7 @@ const readDB = (field, data) => ({ type: READ_DB, data, field });
 
 export const willReadDB = field => async dispatch => {
   try {
-    console.log(field);
+
 
     const collection = db.collection('properties');
     const collection2 = db.collection('development');

@@ -31,7 +31,7 @@ class Navbar extends Component {
       case 'work':
         this.props.handleNav();
         return window.scrollTo(null, this.props.work);
-        case 'currentwork':
+      case 'currentwork':
         this.props.handleNav();
         return window.scrollTo(null, this.props.currentWorkBlock);
     }
@@ -51,13 +51,29 @@ class Navbar extends Component {
           className="profile-pic"
           src="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/_1170269%20copy%202.JPG?alt=media&token=def09c83-3d12-42fa-a64f-5b16f3fb2ee8"
         />
+        <div className="flex row align-center wrap my-10px">
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://www.linkedin.com/in/ryan-wetmore/"
+          >
+            <i className="fab fa-linkedin text-decoration-none color-secondary" />
+          </a>
+          <a
+            rel="noopener noreferrer"
+            target="_blank"
+            href="https://github.com/archon21"
+          >
+            <i className="fab fa-github-square text-decoration-none color-secondary" />
+          </a>
 
 
+        </div>
         <a
           className="headline-6 color-white p-5px link"
           onClick={() => this.selectLink('currentwork')}
         >
-          CURRENT WORK
+          CURRENT WORK & PROJECTS
         </a>
         <a
           className="headline-6 color-white p-5px link"
@@ -69,42 +85,29 @@ class Navbar extends Component {
           className="headline-6 color-white p-5px link"
           onClick={() => this.selectLink('projects')}
         >
-          PROJECTS
+          COMPLETED PROJECTS
         </a>
         <a
           className="headline-6 color-white p-5px link"
           onClick={() => this.selectLink('about')}
         >
-          ABOUT ME
+          ABOUT ME & CONTACT
         </a>
-        {/* <Link
-            className={`headline-6 color-white p-5px ${selectedLink ===
-              'hayes-team' && 'selected'}`}
-
-            onClick={() => this.selectLink('hayes-team')}
+        <a
+            rel="noopener noreferrer"
+            className="resume__button background-secondary color-primary my-10px flex align-center justify-center headline-5"
+            target="_blank"
+            href="https://firebasestorage.googleapis.com/v0/b/ryan-wetmore.appspot.com/o/resumes%2Fryan.pdf?alt=media&token=a886c6b7-f6fd-4428-ab07-b78c71eb9ab7"
           >
-            POJECTS
-          </Link>
-          <Link
-            className={`headline-6 color-white p-5px ${selectedLink ===
-              'property-services' && 'selected'}`}
+            View Resume
+        </a>
 
-            onClick={() => this.selectLink('property-services')}
-          >
-            EXPERIENCE
-          </Link>
-          <Link
-            className={`headline-6 color-white p-5px ${selectedLink ===
-              'development' && 'selected'}`}
-            onClick={() => this.selectLink('development')}
-
-          >
-            SKILLS
-          </Link> */}
-
-        <a className="headline-6 color-white link" onClick={this.openContact}>
+        {/* <span
+          className="headline-6 p-5px color-white link"
+          onClick={this.openContact}
+        >
           CONTACT
-        </a>
+        </span> */}
       </nav>
     );
   }
